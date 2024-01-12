@@ -38,4 +38,10 @@ import os
 def home(request):
     students = Student.objects.all()
     context = {'students': students}
-    return render(request, 'home.html', context) 
+    return render(request, 'index.html', context)
+
+def login(request):
+    return render(request, 'userprofile/login.html')
+
+def base(request):
+    return render(request, 'base/base.html')

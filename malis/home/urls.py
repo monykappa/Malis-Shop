@@ -9,7 +9,10 @@ from django.conf.urls.static import static
 
 app_name = 'home'
 urlpatterns = [
-    path('home/', views.home, name='home')
+    path('base/', views.base, name='base'),
+    path('home/', views.home, name='home'),
+    path('login/', views.login, name='login'),
+
 ]
 
 if settings.DEBUG:
